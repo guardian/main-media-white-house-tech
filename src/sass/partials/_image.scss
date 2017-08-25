@@ -1,0 +1,248 @@
+.tech__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-image: url('@@assetPath@@/assets/images/bg.png');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.tech__lights {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+//     z-index: 10000;
+    z-index: 9998;
+}
+
+.tech__light {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes light1 {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(0);
+    }
+    5% {
+        opacity: 1;
+    }
+    15% {
+        transform: translateX(12.1vw) translateY(-6.2vw);
+    }
+    100% {
+        transform: translateX(12.1vw) translateY(-6.2vw);
+    }
+}
+
+.tech__light--1 {
+    right: 7.8vw;
+    top: 30.9vw;
+    animation-name: light1;
+}
+
+@keyframes light2 {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    15%, 100% {
+        transform: translateX(-10.6vw) translateY(-5.5vw);
+    }
+}
+
+.tech__light--2 {
+    left: 46.2vw;
+    top: 29.1vw;
+    animation-name: light2;
+}
+
+@keyframes light2-2 {
+    0%, 9.9%, 35.5% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0) translateY(0) rotate(-27deg);
+    }
+    35% {
+        transform: rotate(-27deg) translateX(-14.9vw) translateY(-5.8vw);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-27deg) translateX(-14.9vw) translateY(-5.8vw);
+    }
+}
+
+.tech__light--2-2 {
+    left: 40.1vw;
+    top: 24.5vw;
+    animation-name: light2-2;
+}
+
+@keyframes light2-3 {
+    0%, 26.9% {
+        opacity: 0;
+    }
+    27% {
+        opacity: 1;
+        transform: rotate(3deg) translateX(0) translateY(0);
+    }
+    45% {
+        transform: rotate(3deg) translateX(-9.2vw) translateY(-4.6vw);
+    }
+    45.5% {
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(3deg) translateX(-9.2vw) translateY(-4.6vw);
+        opacity: 0;
+    }
+}
+
+.tech__light--2-3 {
+    top: 27.6vw;
+    left: 28.7vw;
+    animation-name: light2-3;
+}
+
+@keyframes light3 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    30%, 100% {
+        transform: translateY(8.7vw) translateX(16.4vw);
+    }
+}
+
+.tech__light--3 {
+    left: -0.1vw;
+    top: -3.3vw;
+    animation-name: light3;
+}
+
+@keyframes light3-2 {
+    0%, 20% {
+        transform: rotate(-31deg) translateX(0) translateY(0);
+    }
+    40% {
+        transform: rotate(-31deg) translateX(17vw) translateY(7.5vw)
+    }
+}
+
+.tech__light--3-2 {
+    left: 9.6vw;
+    top: 4.5vw;
+    animation-name: light3-2;
+}
+
+@keyframes light4 {
+    0% {
+        opacity: 0;
+        transform: rotate(-35deg) translateX(0) translateY(0);
+    }
+    15% {
+        opacity: 1;
+    }
+    30%, 100% {
+        transform: rotate(-35deg) translateX(-20.9vw) translateY(-10vw);
+    }
+}
+
+.tech__light--4 {
+    top: 30vw;
+    left: 45vw;
+    animation-name: light4;
+}
+
+@keyframes light4-2 {
+    0%, 19% {
+        transform: translateX(0) translateY(0);
+    }
+    80%, 100% {
+        transform: translateX(-38vw) translateY(-19.5vw);
+    }
+}
+
+.tech__light--4-2 {
+    left: 31.5vw;
+    top: 35vw;
+    animation-name: light4-2;
+}
+
+@keyframes light5 {
+    0% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 1;
+    }
+    40%, 100% {
+        transform: translateX(-30vw) translateY(-15vw);
+    }
+}
+
+.tech__light--5 {
+    left: 68vw;
+    top: 64vw;
+    animation-name: light5;
+}
+
+@keyframes light5-2 {
+    0%, 32% {
+        opacity: 1;
+        transform: rotate(65deg) translateY(0) translateX(0);
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(65deg) translateY(-7vw) translateX(-16.2vw);
+        opacity: 0;
+    }
+}
+
+.tech__light--5-2 {
+    top: 54.6vw;
+    left: 42.1vw;
+    animation-name: light5-2;
+}
+
+.tech__wires {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9995;
+    background-image: url('@@assetPath@@/assets/images/wires.jpg');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.tech__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #000;
+}
