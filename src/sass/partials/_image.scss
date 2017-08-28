@@ -26,7 +26,7 @@
     position: absolute;
     width: 5%;
     height: auto;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -51,6 +51,7 @@
     right: 7.8vw;
     top: 30.9vw;
     animation-name: light1;
+    animation-delay: -1s;
 }
 
 @keyframes light2 {
@@ -68,6 +69,7 @@
 .tech__light--2 {
     left: 46.2vw;
     top: 29.1vw;
+    animation-delay: -.5s;
     animation-name: light2;
 }
 
@@ -92,6 +94,7 @@
 .tech__light--2-2 {
     left: 40.1vw;
     top: 24.5vw;
+    animation-delay: -.5s;
     animation-name: light2-2;
 }
 
@@ -118,6 +121,7 @@
 .tech__light--2-3 {
     top: 27.6vw;
     left: 28.7vw;
+    animation-delay: -.5s;
     animation-name: light2-3;
 }
 
@@ -133,6 +137,7 @@
 .tech__light--3 {
     left: -0.1vw;
     top: -3.3vw;
+    animation-delay: -.75s;
     animation-name: light3;
 }
 
@@ -149,6 +154,7 @@
     left: 9.6vw;
     top: 4.5vw;
     animation-name: light3-2;
+    animation-delay: -.75s;
 }
 
 @keyframes light4 {
@@ -201,26 +207,31 @@
     left: 68vw;
     top: 64vw;
     animation-name: light5;
+    animation-delay: -1.25s;
 }
 
 @keyframes light5-2 {
     0%, 32% {
         opacity: 1;
-        transform: rotate(65deg) translateY(0) translateX(0);
+        transform: rotate(63.5deg) translateY(0) translateX(0);
     }
     40% {
         opacity: 1;
     }
     50% {
-        transform: rotate(65deg) translateY(-7vw) translateX(-16.2vw);
+        transform: rotate(63.8deg) translateY(-6.7vw) translateX(-14.2vw);
+        opacity: 0;
+    }
+    100% {
         opacity: 0;
     }
 }
 
 .tech__light--5-2 {
     top: 54.6vw;
-    left: 42.1vw;
+    left: 42.3vw;
     animation-name: light5-2;
+    animation-delay: -1.25s;
 }
 
 .tech__wires {
